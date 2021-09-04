@@ -1,0 +1,17 @@
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\SistemaEscolarApi.deps.json
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\SistemaEscolarApi.runtimeconfig.json
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\SistemaEscolarApi.runtimeconfig.dev.json
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\SistemaEscolarApi.dll
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\SistemaEscolarApi.pdb
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.csproj.CoreCompileInputs.cache
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.RazorAssemblyInfo.cache
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.RazorAssemblyInfo.cs
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.AssemblyInfoInputs.cache
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.AssemblyInfo.cs
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.RazorTargetAssemblyInfo.cache
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.dll
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.pdb
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\business.dll
+D:\Escola\SistemaEscolar\SistemaEscolarApi\bin\Debug\netcoreapp2.2\business.pdb
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.csprojAssemblyReference.cache
+D:\Escola\SistemaEscolar\SistemaEscolarApi\obj\Debug\netcoreapp2.2\SistemaEscolarApi.csproj.CopyComplete

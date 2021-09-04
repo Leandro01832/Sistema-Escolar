@@ -1,0 +1,14 @@
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\business.deps.json
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\business.dll
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\business.pdb
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.csproj.CoreCompileInputs.cache
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.AssemblyInfoInputs.cache
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.AssemblyInfo.cs
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.dll
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.pdb
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\business.runtimeconfig.json
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\business.runtimeconfig.dev.json
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Escola\SistemaEscolar\business\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.csprojAssemblyReference.cache
+D:\Escola\SistemaEscolar\business\obj\Debug\netcoreapp2.2\business.csproj.CopyComplete

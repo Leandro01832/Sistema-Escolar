@@ -1,0 +1,68 @@
+﻿@model business.Turma
+
+@{
+    ViewData["Title"] = "ParticiparTurma";
+}
+
+
+<form asp-action="ParticiparTurma">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <h1>Participar da Turma</h1>
+
+    <div>
+        <h4>Turma</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LetraIdentificacao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.LetraIdentificacao)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NumeroSala)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NumeroSala)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Materias)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Materias)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Horario)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Horario)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Escola)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Escola.Nome)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Escola.Endereco)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Escola.Endereco)
+            </dd>
+        </dl>
+    </div>
+
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <input type="submit" value="Cadastrar" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">voltar para Home</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
