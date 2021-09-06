@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using business;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SistemaEscolar.Data;
@@ -20,6 +21,12 @@ namespace SistemaEscolar.Controllers
         
         public UserManager<IdentityUser> UserManager { get; }
         public ApplicationDbContext Context { get; }
+
+        [Authorize(Roles ="Admin")]
+        public IActionResult CrudEndPoint()
+        {
+            return View();
+        }
 
         public IActionResult Register()
         {

@@ -21,11 +21,17 @@ namespace SistemaEscolar.Controllers
             _context = context;
         }
 
+        public IActionResult CrudEndPoint()
+        {
+            ViewData["EscolaId"] = new SelectList(_context.Escola, "Id", "Nome");
+            return View();
+        }
+
         // GET: Turma
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Turma.Include(t => t.Escola);
-            return View(await applicationDbContext.ToListAsync());
+            var turmas = _context.Turma.Include(t => t.Escola);
+            return View(await turmas.ToListAsync());
         }
 
         // GET: Turma/Details/5

@@ -45,3 +45,6 @@ D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Turm
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Turma\Edit.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Turma\Index.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Home\Parabens.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Turma\CrudEndPoint.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Escola\CrudEndPoint.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Conta\CrudEndPoint.g.cshtml.cs

@@ -1,0 +1,191 @@
+﻿@model business.Aluno
+
+@{
+    ViewData["Title"] = "CrudEndPoint";
+}
+
+<div class="form-group">
+    <input type="button" value="Buscar todas os registros" id="botaoGetRegistros" class="btn btn-primary loader" />
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CrudEndPoint">
+
+            <div>
+                <label id="informar" class="control-label">Informar Id</label>
+                <input type="number" value="Buscar Turmas" id="codigo" class="form-control" />
+                <input type="button" value="Buscar Turma" id="botaoGetRegistro" class="btn btn-primary loader" />
+            </div>
+            <label id="lblMensagem"></label>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <input type="button" value="Cadastrar" id="botaoCadastrar" class="btn btn-primary  loader" />
+                <input type="button" value="Atualizar" id="botaoAtualizar" class="btn btn-primary  loader" />
+                <input type="button" value="Deletar" id="botaoDeletar" class="btn btn-primary loader" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="bodyTable"></tbody>
+        </table>
+    </div>
+</div>
+
+<div id="loading"><img src="~/images/loader.gif" /></div>
+
+
+@section Scripts
+    {
+    <script type="text/javascript" src="~/js/loader.js"></script>
+    <script type="text/javascript">
+
+            buscarTodos();
+
+            function getData()
+            {
+              var data =
+              {
+                    Id: $("#codigo").val(),
+                    Nome: $("#Nome").val(),
+                  Email: $("#Email").val()
+                };
+
+                return data;
+            }
+
+            $("#botaoCadastrar").on("click", function () {
+
+                let data = getData();
+
+                data.Id = 0;
+
+                $.ajax({
+                    type: "Post",
+
+                    contentType: 'application/json',
+                    url: "https://localhost:44387/api/AlunoApi",
+                    data: JSON.stringify(data)
+                }).done(function (response) {
+
+                    $("#lblMensagem").html("Cadastrado com sucesso!");
+                    buscarTodos();
+                    $("#loading").hide();
+                });
+
+            });
+
+        $("#botaoGetRegistro").on("click", function () {
+
+                $.ajax({
+                    type: "GET",
+                    contentType: 'application/json',
+                    url: "https://localhost:44387/api/AlunoApi/" + $("#codigo").val()
+                }).done(function (response) {
+
+                    $("#Nome").val(response.nome);
+                    $("#Email").val(response.email);
+                    $("#loading").hide();
+                });
+            });
+
+
+        $("#botaoGetRegistros").on("click", function () {
+                buscarTodos();
+                $("#loading").hide();
+            });
+
+            function buscarTodos()
+            {
+                $.ajax({
+                    type: "GET",
+                    contentType: 'application/json',
+                    url: "https://localhost:44387/api/AlunoApi"
+                }).done(function (response) {
+
+                    $("#bodyTable").html("");
+
+                    for (var i = 0; i < response.length; i++) {
+                        var ele = response[0];
+
+                        document.getElementById("bodyTable").innerHTML += "<tr>" +
+                            " <th>" +
+                            response[i].id +
+                            "</th>     " +
+                            " <th>" +
+                            response[i].nome +
+                            "</th>     " +
+                            "<th>      " +
+                            response[i].email +
+                            "</th>     " +
+                            "<th></th> " +
+                            "</tr>";
+                    }
+                });
+
+            }
+
+            $("#botaoAtualizar").on("click", function () {
+
+                let data = getData();
+
+                $.ajax({
+                    type: "PUT",
+                    contentType: 'application/json',
+                    url: "https://localhost:44387/api/AlunoApi/" + $("#codigo").val(),
+                    data: JSON.stringify(data)
+                }).done(function (response) {
+
+                    $("#lblMensagem").html("Atualizado com sucesso");
+                    buscarTodos();
+                    $("#loading").hide();
+                });
+
+            });
+
+            $("#botaoDeletar").on("click", function () {
+
+                $.ajax({
+                    type: "DELETE",
+                    contentType: 'application/json',
+                    url: "https://localhost:44387/api/AlunoApi/" + $("#codigo").val(),
+                    data: { id: $("#codigo").val() }
+                }).done(function (response) {
+                    $("#lblMensagem").html("Apagado com sucesso!");
+                    buscarTodos();
+                    $("#loading").hide();
+                });
+
+            });
+
+    </script>
+}
+

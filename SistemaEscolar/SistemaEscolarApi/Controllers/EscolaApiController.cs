@@ -44,12 +44,8 @@ namespace SistemaEscolarApi.Controllers
 
         // PUT: api/EscolaApi/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEscola(int id, Escola escola)
+        public async Task<IActionResult> PutEscola([FromBody] Escola escola)
         {
-            if (id != escola.Id)
-            {
-                return BadRequest();
-            }
 
             _context.Entry(escola).State = EntityState.Modified;
 
@@ -59,7 +55,7 @@ namespace SistemaEscolarApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EscolaExists(id))
+                if (!EscolaExists(escola.Id))
                 {
                     return NotFound();
                 }
@@ -74,7 +70,7 @@ namespace SistemaEscolarApi.Controllers
 
         // POST: api/EscolaApi
         [HttpPost]
-        public async Task<ActionResult<Escola>> PostEscola(Escola escola)
+        public async Task<ActionResult<Escola>> PostEscola([FromBody]Escola escola)
         {
             _context.Escola.Add(escola);
             await _context.SaveChangesAsync();

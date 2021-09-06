@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaEscolarApi;
 using business;
+using Microsoft.AspNetCore.Cors;
 
 namespace SistemaEscolarApi.Controllers
 {
@@ -44,12 +45,8 @@ namespace SistemaEscolarApi.Controllers
 
         // PUT: api/TurmaApi/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTurma(int id, Turma turma)
+        public async Task<IActionResult> PutTurma([FromBody] Turma turma)
         {
-            if (id != turma.Id)
-            {
-                return BadRequest();
-            }
 
             _context.Entry(turma).State = EntityState.Modified;
 
@@ -59,7 +56,7 @@ namespace SistemaEscolarApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!TurmaExists(id))
+                if (!TurmaExists(turma.Id))
                 {
                     return NotFound();
                 }
@@ -74,7 +71,7 @@ namespace SistemaEscolarApi.Controllers
 
         // POST: api/TurmaApi
         [HttpPost]
-        public async Task<ActionResult<Turma>> PostTurma(Turma turma)
+        public async Task<ActionResult<Turma>> PostTurma([FromBody]Turma turma)
         {
             _context.Turma.Add(turma);
             await _context.SaveChangesAsync();

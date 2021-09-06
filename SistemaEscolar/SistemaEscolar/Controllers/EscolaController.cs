@@ -27,6 +27,11 @@ namespace SistemaEscolar.Controllers
             return View(await _context.Escola.ToListAsync());
         }
 
+        public IActionResult CrudEndPoint()
+        {
+            return View();
+        }
+
         // GET: Escola/Details/5
         public async Task<IActionResult> Details(int? id)
         {
