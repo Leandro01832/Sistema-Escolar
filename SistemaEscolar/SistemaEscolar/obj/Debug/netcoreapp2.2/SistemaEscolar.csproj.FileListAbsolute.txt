@@ -32,7 +32,6 @@ D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\SistemaEscolar.V
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\SistemaEscolar.csproj.CopyComplete
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\SistemaEscolar.dll
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\SistemaEscolar.pdb
-D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Conta\Register.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Home\ParticiparTurma.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Escola\Create.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Escola\Delete.g.cshtml.cs
@@ -48,3 +47,11 @@ D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Home
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Turma\CrudEndPoint.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Escola\CrudEndPoint.g.cshtml.cs
 D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Views\Conta\CrudEndPoint.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Escola\SistemaEscolar\SistemaEscolar\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
